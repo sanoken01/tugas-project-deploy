@@ -2,37 +2,112 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Deploy Otomatis - SIJA</title>
+    <title>Project CI/CD - XI SIJA</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background: #0f172a;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #020617, #0f172a);
             color: white;
+            min-height: 100vh;
+            margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
         }
+
         .card {
-            background: #1e293b;
-            padding: 30px;
-            border-radius: 10px;
+            background: rgba(30, 41, 59, 0.95);
+            padding: 40px;
+            border-radius: 16px;
             text-align: center;
-            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+            width: 420px;
+            box-shadow: 0 0 40px rgba(56, 189, 248, 0.25);
+            animation: fadeIn 1.2s ease;
         }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         h1 {
             color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #cbd5f5;
+            margin-bottom: 25px;
+            font-size: 15px;
+        }
+
+        .info {
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        .info p {
+            margin: 8px 0;
+            font-size: 15px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #22c55e;
+            color: black;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+
+        .line {
+            height: 2px;
+            width: 60px;
+            background: #38bdf8;
+            margin: 15px auto 25px;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
     <div class="card">
-        <h1>Project XI SIJA yeaayyyyyyyyyyyyyy🎉</h1>
-        <p><b>Nama:</b> Sandya Hafiduddin Faristyo</p>
-        <p><b>Kelas:</b> XI SIJA 2</p>
-        <p><b>Sekolah:</b> SMK Telkom Sidoarjo</p>
-        <p><b>Tugas:</b> CI/CD dengan GitHub Actions</p>
-        <p>Website ini ter-deploy otomatis setiap push ke GitHub 🚀</p>
+        <h1>🚀 Project CI/CD SIJA</h1>
+        <p class="subtitle">Automatic Deployment with GitHub Actions</p>
+
+        <div class="line"></div>
+
+        <div class="info">
+            <p><b>👤 Nama</b> : Sandya Hafiduddin Faristyo</p>
+            <p><b>🏫 Sekolah</b> : SMK Telkom Sidoarjo</p>
+            <p><b>📚 Kelas</b> : XI SIJA 2</p>
+            <p><b>🧪 Mata Pelajaran</b> : Sistem Informasi Jaringan Aplikasi</p>
+            <p><b>⚙️ Teknologi</b> : GitHub, GitHub Actions, Vercel</p>
+        </div>
+
+        <span class="badge">CI/CD ACTIVE ✔️</span>
+
+        <div class="footer">
+            Website ini otomatis ter-deploy setiap push ke GitHub<br>
+            © 2026 — Project SIJA
+        </div>
     </div>
 </body>
 </html>
